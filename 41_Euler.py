@@ -2,7 +2,7 @@
 
 #Project Euler Problem 41
 
-#Time for execution: 1059.419870376587 ms
+#Time for execution: 833.9018821716309 ms
 
 from itertools import permutations
 
@@ -23,7 +23,8 @@ for i in digits:
     for j in comb:
         j_list = list(j)
         concat = ''.join(map(str, j_list))
-        if is_prime(int(concat)) == True:
-            check_list.append(int(concat))
+        if concat[-1] == str((1 or 3 or 7 or 9)):
+            if is_prime(int(concat)) == True:
+                check_list.append(int(concat))
             
 print(max(set(check_list)))
