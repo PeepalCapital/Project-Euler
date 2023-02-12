@@ -4,6 +4,8 @@
 
 #Time for execution: 371.8836307525635 ms
 
+from collections import Counter 
+
 def prime_factors(n):
     i = 2
     factors = []
