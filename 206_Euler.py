@@ -4,4 +4,4 @@
 
 #Very poor performance. Perhaps a much better way exists to solve this one.
 
-#Deleting the code since I relaizd we should not be sharing solutions beyond problem number 100.
+#Deleting the code since I realized we should not be sharing solutions beyond problem number 100.
