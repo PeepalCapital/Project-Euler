@@ -12,8 +12,6 @@ sum_teens = 0
 for a in range (1, 20):
     sum_teens = sum_teens + num_dict[a]
     
-#print(sum_teens)
-
 sum_twodigits = 0
 for b in range (20, 100):
     if (b % 10 == 0):
@@ -21,8 +19,6 @@ for b in range (20, 100):
     else:
         sum_twodigits = sum_twodigits + num_dict[b % 10]
         sum_twodigits = sum_twodigits + num_dict[b - (b % 10)]
-
-#print(sum_twodigits)
 
 sum_threedigits_teens = 0
 for d in range (100, 120):
@@ -33,8 +29,6 @@ for d in range (100, 120):
     if (d >= 110 and d < 120):
         sum_threedigits_teens = sum_threedigits_teens + num_dict[d % 100] + 13
     
-
-
 sum_threedigits = 0
 for c in range (120, 1000):
     if (c % 100 == 0):
@@ -45,10 +39,6 @@ for c in range (120, 1000):
             sum_threedigits = sum_threedigits + num_dict[c % 100]
         else:
             sum_threedigits = sum_threedigits + num_dict[c % 100 - c % 10] + num_dict[c % 10]
-        
-        
-    
-        
-        
+               
 total_sum = sum_teens + sum_twodigits + sum_threedigits_teens + sum_threedigits + 11
 print(total_sum)        
